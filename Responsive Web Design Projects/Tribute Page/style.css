@@ -1,0 +1,144 @@
+/* BODY */
+#main {
+  font-family: 'Arvo', serif;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+  text-align: center;
+}
+  
+/* HEADER -------------------------*/
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: black;
+}
+
+header i {
+  margin-left: 5%;
+  color: white;
+}
+
+#title {
+  color: white;
+  margin-left: 5%;
+}
+
+@media (max-width: 400px) {
+  #title {
+    margin-top: 5%;
+    font-size: 1.2em;
+  }
+}
+
+/* Photos -------------------------*/
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  background: rgb(46,46,46);
+  background: linear-gradient(0deg, rgba(46,46,46,1) 2%, rgba(4,3,3,1) 100%);
+  margin: 3%;
+  margin-top: 0;
+  border-radius: 3%;
+}
+
+#img-div:hover {
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.5);
+}
+
+#img-div {
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 5%;
+  margin: 3% 1% 3% 1%;
+  width: 300px;
+  height: auto;
+  text-align: center;
+}
+
+#image {
+  max-width: 100%;
+  display: block;
+  border-radius: 7%;
+}
+
+#img-caption {
+  font-family: 'Indie Flower', cursive;
+  color: black;
+  font-size: 1rem;
+}
+
+@media (max-width: 400px) {
+  #img-div {
+      margin: 3% 4% 3% 4%;
+  }
+  
+  #img-caption  {
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    font-size: 0.8em;
+    
+  }
+}
+
+/* Info -------------------------*/
+#tribute-info {
+  padding: 3%;
+  background: rgb(46,46,46);
+  background: linear-gradient(180deg, rgba(46,46,46,1) 95%, rgba(4,3,3,1) 105%);
+  color: white;
+  text-align: justify;
+  margin: 3%;
+  border-radius: 3%;
+  line-height: 1.6;
+}
+
+.title-bio {
+  text-align: center;
+  color: white;
+  margin: 0 0 3% 0;
+  padding: 0;
+  font-size: 4em;
+  font-weight: 900;
+}
+
+#tribute-link {
+  font-size: 80%;
+  color: rgba(255,255,255,0.5);
+  text-align: center;
+}
+
+/* Info -------------------------*/
+.footer {
+  margin: 20px 0 30px -100px;
+  position: absolute;
+  left: 50%;
+  padding: 10px 0 7px 0;
+  border: 3px ridge rgba(255,255,255,0.1);
+  border-radius: 4px;
+  background-color: rgba(255,255,255,0.05);
+  width: 200px;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+}
+
+.footer:hover {
+  box-shadow: 0px 0px 20px rgba(255,255,255,0);
+  background-color: rgba(255,255,255,0.1);;
+}
+.footer a {
+  padding: 2%;
+  margin-top: 7px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.footer p {
+  width: auto;
+  font-family: 'Lobster', cursive;
+  margin: 7px 0 0 0;
+  font-size: 1em;
+  font-weight: 100;
+  color: white;
+}
