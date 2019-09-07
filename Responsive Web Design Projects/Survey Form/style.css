@@ -1,0 +1,293 @@
+/* BODY ---------------------------*/
+body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1521999411642-af5f58ed42b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80;);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+/* MAIN DIV FORM -------------------------*/
+.form-main {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  width: 80%;
+  box-shadow: 0px 0px 100px rgba(255,255,255,0.15);
+  background-color: black;
+  color: white;
+  background-image: linear-gradient(90deg,black 40%, white 650%);
+  
+}
+
+@media (max-width: 400px) {  
+  .form-main {
+    flex-direction: column-reverse;   
+  }
+}
+
+@media (min-width: 700px) {
+  .form-main {
+    width: 560px;
+  }
+}
+
+.checks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+  font-family: 'Cuprum', sans-serif;
+  background-color: black;
+}
+
+.checks h2 {
+  font-family: 'Amatic SC';
+  margin: 3% 0 3% 7%;;
+
+}
+
+hr {
+  width: 85%;
+  border-color: #B71C1C;
+  margin: 10%;
+}
+
+/* RADIO -------------------------*/
+input[type=radio] + label,
+input[type=checkbox] + label {
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 3% 0 3% 10%;
+}
+
+input[type=radio],
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=radio] + label:before,
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.05em solid white;
+  background-color: black;
+  vertical-align: bottom;
+  color: white;
+  color: transparent;
+  transition: 1s;
+  margin-right: 0.5em;
+}
+
+input[type=radio]:disabled + label:before,
+input[type=checkbox]:disabled + label:before {
+  content: "\2715";
+  color:black;
+}
+
+input[type=radio]:checked + label:before,
+input[type=checkbox]:checked + label:before {
+  background-color: #B71C1C;
+  border-color: #B71C1C;
+  color: white;
+}
+
+/* PRESENTATION -------------------------*/
+.presentation {
+  margin-top: 0px;
+  width: 50%;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start ;
+  align-items: flex-start;
+  text-align: justify;
+}
+
+.presentation p {
+  margin: 0 10px 0 10px;
+}
+
+.presentation img {
+  padding: 10px 0 10px 0;
+}
+
+@media (max-width: 400px) {  
+  .presentation {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.presentation img {
+  max-width: 100%;
+  display: block;
+  opacity: 0.6;
+}
+
+@media (max-width: 400px) {  
+  .presentation img {
+    width: 70%;
+    margin: auto;
+    margin-top: 5vw;
+  }
+}
+
+#description {
+  color: white;
+  text-align: center;
+  font-family: 'Cuprum', sans-serif;
+  opacity: 0.6;
+  margin-top: 5%;
+}
+
+@media (max-width: 400px) {  
+  #description {
+    margin-top: 3%;
+  }
+}
+
+/* DROPDOWN -------------------------*/
+#dropdown {
+  background: url(http://i62.tinypic.com/15xvbd5.png) no-repeat 92%;  
+  margin: 15px 0 10px 30px;
+}
+
+#dropdown select {
+  font-family: 'Cuprum', sans-serif;
+  background: transparent;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 14px;
+  height: 29px;
+  padding: 5px; /* If you add too much padding here, the options won't show in IE */
+  width: 25vw;
+}
+
+
+@media (max-width: 400px) {
+  #dropdown select {
+    width: 50vw;
+  }
+}
+
+
+@media (min-width: 700px) {
+  #dropdown select {
+    width: 200px;
+  }
+}
+
+/* TEXT AREA --------------------------------*/
+textarea {
+  background-color: rgb(255,255,255,0.08);
+  color: white;
+  margin: 15px 0 15px 30px;
+  width: 25vw;
+}  
+
+@media (max-width: 400px) {
+  textarea {
+    width: 65%;
+  }
+}
+
+@media (min-width: 700px) {
+  textarea {
+    width: 200px;
+  }
+}
+
+/* FORM --------------------------------*/
+.form {
+  width: 50%;
+  background-color: black;
+  text-align: center;
+}
+
+@media (max-width: 400px) {  
+  .form {
+    width: 100%;
+  }
+}
+
+#title {
+  margin: 20% 0 5% 0;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
+
+.form .field {
+  text-align: start;
+  background-color: black;
+  color: white;
+  border: black;
+  border-bottom: 1px solid white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1em;
+  margin: 0 0 5% 0;
+  padding: 0 0 7px 10px;
+  width: 70%;
+}
+
+#name-label,
+#email-label,
+#number-label {
+  display: none;
+  visibility: hidden;
+}
+
+.btn-submit {
+  font-size: 1.2rem;
+  color: white;
+  padding: 3% 15% 3% 15%;
+  background-color: #B71C1C; 
+  border: 0;
+  border-radius: 30px;
+  font-family: 'Cuprum', sans-serif;
+  margin: 20%;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+/* MY INFO -------------------------*/
+.contact {
+  width: 200px;
+  padding: 10px 0 7px 0;
+  margin: 10% 0 2% 0;
+  text-align: center;
+  border: 3px ridge rgba(255,255,255,0.1);
+  border-radius: 4px;
+  background-color: black;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.1);
+}
+
+.contact:hover {
+  box-shadow: 0px 0px 0px rgba(255,255,255,0);
+  background-color: rgba(0,0,0,0.9);;
+}
+
+.contact a {
+  padding: 2%;
+  margin-top: 7px;
+  color: white;
+}
+
+.contact p {
+  width: auto;
+  font-family: 'Lobster', cursive;
+  margin: 7px 0 0 0;
+  font-size: 1em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+}

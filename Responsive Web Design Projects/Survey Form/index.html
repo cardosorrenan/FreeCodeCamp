@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Renan Cardoso">
+    <meta name="description" content="Description-Template">
+    <meta name="keywords" content="kw1, kw2, k3">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Amatic+SC:700|Cuprum|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <div class="form-main">
+        <div class="form">
+          <h1 id="title">CONTACT</h1>
+          <hr> 
+          <form id="survey-form" action="#">
+              <label id="name-label">Name</label><br>   
+              <input type="text" name="name" placeholder="Name" class="field" id="name" required><br>
+              <label id="email-label">Email</label><br>
+              <input type="email" name="email" placeholder="Email" class="field" id="email" required><br>
+              <label id="number-label">Number</label><br>   
+              <input type="number" name="age" min="18" max="60" placeholder="Age" class="field" id="number" required><br>  
+             
+              <div class="checks">
+                <hr>
+                <h2>Tells us about you...</h2>              
+                  <input type="radio" name="group1" value="1" id="male" checked>
+                  <label for="male">Male</label>             
+                  <input type="radio" name="group1" value="2" id="female">
+                  <label for="female">Female</label>            
+                  <input type="radio" name="group1" value="3" id="not-binary">
+                  <label for="not-binary">Not binary genre</label>
+                <hr>
+                <h2>What is your favorite drink?</h2>
+                  <input type="checkbox" name="group2" value="1" id="water" checked>
+                  <label for="water">Water</label>             
+                  <input type="checkbox" name="group2" value="2" id="beer">
+                  <label for="beer">Beer</label>            
+                  <input type="checkbox" name="group2" value="3" id="coffee">
+                  <label for="coffee">Coffee</label>
+                <hr>
+                <h2>You consider yourself...</h2>     
+                <div id="dropdown">
+                    <select>
+                      <option value="0">Select:</option>
+                      <option value="1">Festive</option>
+                      <option value="2">Introvert</option>
+                      <option value="2">Both</option>
+                    </select>
+                    <!--ref select box: https://codepen.io/ericrasch/pen/zjDBx -->
+                  </div>
+                  <hr>
+                  <h2>Let us a message!</h2>  
+                  <textarea rows="5" cols="25"></textarea>   
+                  <hr>
+              </div>
+              
+              <input type="submit" value="Submit" class="btn-submit" id="submit">
+          </form>
+        </div>
+        <div class="presentation">
+           <img src="https://images.unsplash.com/photo-1516458464372-eea4ab222b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1533&q=80">
+         <p id="description"> Beer may not solve your problems, but neither will water or milk!</p>
+       
+          <img src="https://images.unsplash.com/photo-1563396983631-2f8cf576bb36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1533&q=80">
+          <p id="description">One beer a day keep the doctor away!</p>
+          <img src="https://images.unsplash.com/photo-1436076863939-06870fe779c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80">
+        </div>
+      </div>
+      <div class="contact">
+        <a href="https://github.com/cardosorrenan" target="_blank"><i class="fa fa-github fa-lg" ></i></a>
+        <a href="https://www.instagram.com/cardosorrenan/" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=renanhc96@gmail.com" target="_blank"><i class="fa fa-google fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/renan-cardoso-0b79b6134/" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+       <p>Renan Cardoso in sep'19</p>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
