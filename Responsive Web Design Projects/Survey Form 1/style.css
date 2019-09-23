@@ -1,0 +1,144 @@
+/* BODY ---------------------------*/
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ;);
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+/* MAIN DIV FORM -------------------------*/
+.form-main {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  width: 80%;
+  box-shadow: 0px 0px 100px rgba(255,255,255,0.15);
+  background-color: black;
+}
+
+@media (max-width: 400px) {  
+  .form-main {
+    flex-direction: column-reverse;   
+  }
+}
+
+@media (min-width: 700px) {
+  .form-main {
+    width: 560px;
+  }
+}
+
+/* CHILDREN MAIN DIV FORM-------------------------*/
+.presentation {
+  width: 50%;
+  padding-right: 2vw;
+  padding-left: 2vw;
+}
+
+@media (max-width: 400px) {  
+  .presentation {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.presentation img {
+  max-width: 100%;
+  display: block;
+  opacity: 0.6;
+}
+
+@media (max-width: 400px) {  
+  .presentation img {
+    width: 70%;
+    margin: auto;
+    margin-top: 5vw;
+  }
+}
+
+.form {
+  width: 50%;
+  background-color: black;
+  text-align: center;
+}
+
+@media (max-width: 400px) {  
+  .form {
+    width: 100%;
+  }
+}
+
+.form h1 {
+  margin: 25% 0 15% 0;
+  color: white;
+  font-family: 'Amatic SC', cursive;
+}
+
+.form .field {
+  text-align: start;
+  background-color: black;
+  color: white;
+  border: black;
+  border-bottom: 1px solid white;
+  font-family: 'Cuprum', sans-serif;
+  font-size: 1em;
+  margin-bottom: 10%;
+  padding: 15px 0 7px 10px;
+  width: 70%;
+}
+
+.btn-submit {
+  font-size: 1.2rem;
+  color: white;
+  padding: 3% 15% 3% 15%;
+  background-color: #B71C1C; 
+  border: 0;
+  border-radius: 30px;
+  font-family: 'Cuprum', sans-serif;
+  margin: 20%;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+/* MY INFO -------------------------*/
+.contact {
+  width: 200px;
+  padding: 10px 0 7px 0;
+  margin: 10% 0 2% 0;
+  text-align: center;
+  border: 3px ridge rgba(255,255,255,0.1);
+  border-radius: 4px;
+  background-color: black;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.1);
+}
+
+.contact:hover {
+  box-shadow: 0px 0px 0px rgba(255,255,255,0);
+  background-color: rgba(0,0,0,0.9);;
+}
+
+.contact a {
+  padding: 2%;
+  margin-top: 7px;
+  color: white;
+}
+
+.contact p {
+  width: auto;
+  font-family: 'Lobster', cursive;
+  margin: 7px 0 0 0;
+  font-size: 1em;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+}

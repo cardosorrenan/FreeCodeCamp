@@ -27,7 +27,7 @@ body {
   
 }
 
-@media (max-width: 400px) {  
+@media (max-width: 420px) {  
   .form-main {
     flex-direction: column-reverse;   
   }
@@ -35,7 +35,7 @@ body {
 
 @media (min-width: 700px) {
   .form-main {
-    width: 560px;
+    width: 700px;
   }
 }
 
@@ -103,8 +103,7 @@ input[type=checkbox]:checked + label:before {
 .presentation {
   margin-top: 0px;
   width: 50%;
-  padding-right: 2vw;
-  padding-left: 2vw;
+  margin: 0 25px 0 7px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start ;
@@ -113,16 +112,19 @@ input[type=checkbox]:checked + label:before {
 }
 
 .presentation p {
-  margin: 0 10px 0 10px;
+  margin: auto;
 }
 
-.presentation img {
-  padding: 10px 0 10px 0;
+@media (max-width: 420px) {  
+  .presentation p {
+    margin: auto 10px auto 10px;
+  }
 }
 
-@media (max-width: 400px) {  
+@media (max-width: 420px) {  
   .presentation {
     width: 100%;
+    margin: 0 15px 0 15px;
     padding: 0;
   }
 }
@@ -131,14 +133,24 @@ input[type=checkbox]:checked + label:before {
   max-width: 100%;
   display: block;
   opacity: 0.6;
+  padding: 10px 0 0px 0;
 }
 
-@media (max-width: 400px) {  
+@media (max-width: 420px) {  
   .presentation img {
-    width: 70%;
+    width: 80%;
     margin: auto;
-    margin-top: 5vw;
   }
+}
+
+#first-img {
+  margin-top: 20%;
+}
+
+
+
+#last-img {
+  margin-bottom: 20%;
 }
 
 #description {
@@ -146,10 +158,10 @@ input[type=checkbox]:checked + label:before {
   text-align: center;
   font-family: 'Cuprum', sans-serif;
   opacity: 0.6;
-  margin-top: 5%;
+  margin: 10px auto 10px auto;
 }
 
-@media (max-width: 400px) {  
+@media (max-width: 420px) {  
   #description {
     margin-top: 3%;
   }
@@ -175,7 +187,7 @@ input[type=checkbox]:checked + label:before {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #dropdown select {
     width: 50vw;
   }
@@ -196,7 +208,7 @@ textarea {
   width: 25vw;
 }  
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   textarea {
     width: 65%;
   }
@@ -215,7 +227,7 @@ textarea {
   text-align: center;
 }
 
-@media (max-width: 400px) {  
+@media (max-width: 420px) {  
   .form {
     width: 100%;
   }
