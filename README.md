@@ -8,8 +8,8 @@
  * Technical Documentation Page: https://codepen.io/cardosorrenan/pen/KKPQeOm 
     :wrench:
 
- * Product Landing Page: https://codepen.io/cardosorrenan/pen/pozZJyQ
-    :wrench:
+ * Product Landing Page: https://codepen.io/cardosorrenan/pen/PoYvYax
+    :heavy_check_mark:
 
  * Survey Form 2: https://codepen.io/cardosorrenan/pen/yLBvBE 
     :heavy_check_mark:

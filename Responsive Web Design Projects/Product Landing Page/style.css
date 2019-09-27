@@ -1,114 +1,119 @@
 body, html {
-  min-height: 100%;
-  margin: 0;
+  height: 100%;
+  width: 100vw;
   padding: 0;
-  background-color: #222629;
-  box-sizing: border-box;
+  background: rgb(25,27,28);
+  background: linear-gradient(0deg, rgba(25,27,28,1) 0%, rgba(34,38,41,1) 50%, rgba(25,27,28,1) 100%);
+  overflow-Y: scroll;
+  overflow-X: hidden;
 }
-
-.split {
-  background-color: orange;
-  position: relative;
-  top: 20vmin;
-  height: 40vmin;
-  border-radius: 100%;
-  width: 100%;
-  transform: scale(1.5) rotateZ(-5deg) ;
-  background-color: white;
-  box-shadow: 0px -5px 5px rgba(0,0,0,0.1);
-}
-
 
 .content-page {
   display: flex;
-  overflow-y: scroll;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  overflow: hidden;
 }
 
-.content-page img {
-  border: 1px solid white;
-  padding: 5px;
-  margin-bottom: 30px;
-  height: 40vmin;
+.content-page iframe{
+  margin: 20px;
+  border: 6px solid white;
 }
 
 .background {
   position: absolute;
-  top: 35%;
-  left: 40%;
+  top: 40%;
+  left: 50%;
+  margin-left: -65px;
   z-index: 0;
   opacity: 0.1;
-  -webkit-filter: blur(3px);
+  -webkit-filter: blur(6px);
 }
 
-.navigator {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20%;
-  height: 90vh;
-  transition-duration: 0.9s;
-  margin: 3%;
-  margin-top: 5vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: #1a1c1f;
-  text-align: center;
-  padding-top: 0px;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.1)
+.background ion-icon {
+  font-size: 135px;
+  color: white;
 }
 
-.icon-bit {
-  margin-top: 20px;
-  cursor: pointer;
-  width: 80%;
-  padding-bottom: 6vw;
-  border-bottom: 1px double rgba(255,255,255,0.4);
-  padding-bottom: 7%; 
-  margin-top: 5%
-}
-
-.navigator svg {
-  padding-bottom: 2vw;
-}
-
-.icon-bit h1 {
-  font-family: 'Libre Baskerville', serif;
-  margin: 0px;
-  font-size: 80%;
-  color: rgba(255,255,255,0.8);
-}
-
-.icon {
-  margin-bottom: 0px;
-  cursor: pointer;
-  color: #86C232;
-  margin-top: 8vh; 
-  font-size: 28px;
-}
-
-
-.icon:not( :hover ) {
+.background ion-icon:not( :hover ) {
   transition-duration: 0.9s;
   transform: rotate(0) translateX(0px);
 }
 
+.background ion-icon:hover {
+  transition-duration: 0.9s;
+  transform: rotate(-25deg) scale(1.5);
+  opacity: 0.5;
+}
+
+.navigator {
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 95%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1c1f;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+  transition-duration: 0.9s;
+}
+
+.navigator .icon-bit img {
+  cursor: pointer;
+  height: 40px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.icon-bit h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 80%;
+  width: 80px;
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: #3A86FF;
+  font-size: 24px;
+}
+
+.icon-bit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  border-right: 1px double rgba(255,255,255,0.4);
+  margin-left: 5%;
+  padding-right: 5%;
+}
+
+.icon:not( :hover ) {
+  transition-duration: 0.9s;
+  transform: rotate(0) translatey(0px);
+}
+
 .icon:hover {
   transition-duration: 0.9s;
-  transform: rotate(-1deg) translateX(8px);
+  transform: rotate(-1deg) translatey(8px);
   opacity: 0.5;
 }
 
 .menu {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   border-radius: 5px;
+  width: 70%;
 }
 
 :link {
@@ -116,62 +121,101 @@ body, html {
 }
 
 .page {
-  position: absolute;
-  left: 26%;
+  top: 17%;
   width: 68%;
- 
-  margin: 5vh 3% 5% 0px;
+  margin: 130px 8% 20% 8%;
   display: none;
-  color: white;
- 
+  color: black;
   border-radius: 10px;
-  z-index: 1;
-  overflow: hidden;
+  z-index: 2;
+  padding: 0% 8% 0% 8%;
+  background-color: lightblue;
+  padding-top: 0;
 }
 
-#mobile {
-  background:  hsl(85, 60%, 34%);
+.page img {
+  max-width: 100%;
+  border: 6px solid white;
 }
 
-#site {
-  background: #12c2e9;
+.page h1 {
+   font-family: 'Pacifico', serif;
+   font-weight: 100;
+   color: rgba(0,0,150,0.7);
 }
 
-#desktop {
-  background: #c471ed;
+.page .content-page p {
+  font-size: 22px;
+  text-align: center;
+  color: rgba(0,0,150,0.7);
+  font-family: 'Lato', sans-serif;
 }
 
-#about {
-  background: black;
+form {
+  margin-top: 20%;
+}
+
+#email {
+  width: 75%;
+  height: 25px;
+  border:0;
+  border-radius: 10px;
+  padding-left: 10px;
+  margin-bottom: 5%;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+  color: rgba(0,0,200,0.9);
+  font-weight: 800;
+}
+
+#message {
+  height: 100px;
+  width: 75%;
+  padding-left: 10px;
+  text-align: start;
+  padding-top: 0px;
+  box-shadow: 2px 2px 10px rgba(0,0,0,0.4);
+}
+
+.btn-submit {
+  font-size: 1.2rem;
+  color: white;
+  padding: 3% 15% 3% 15%;
+  background-color: #3A86FF; 
+  border: 0;
+  border-radius: 30px;
+  font-family: 'Pacifico', sans-serif;
+  margin: 10%;
+  box-shadow: 0px 0px 20px rgba(255,255,255,0.2);
+  cursor: pointer;
+}
+
+
+
+*::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  width: 50px;
+  box-shadow: inset -3px -3px 6px rgba(0, 0, 0, 0.8);
+  background-color: white;
 }
 
 @media screen and (orientation: landscape) {
-  .navigator { margin-top: 2%;  height: 90vh; }
-  .icon { font-size: 24px; margin-top: 6vh; }
-  .background { transform: scale(.8); position: absolute; top: 15%; left: 40%; z-index: 0; opacity: 0.1; -webkit-filter: blur(3px); }
 }
 
-/* SMALL DEVICES - TABLETS*/
-@media screen and (min-width: 768px) {
-  .icon { font-size: 36px;  }
-  .navigator svg { margin-top: 4vh; transform: scale(1.35); }
-  .navigator { margin-left: 6%; margin-right: 3%; }
-  .page { left: 29%; width: auto; margin-right: 6%;  }
-  .background { transform: scale(1.5); left: 50%; top: 40%}
+/* SMALL DEVICES - SMARTPHONE*/
+@media screen and (max-width: 400px) {
+  .icon-bit h1 { display: none; visibility: hidden }
 }
-/* MEDIUM DEVICES - TABLETS & DESKTOPS*/
-@media screen and (min-width: 960px) {
-  .page { width: 547px; margin-right: auto;  }
-  .background { transform: scale(1.5); }
 
+/* MEDIUM DEVICES - TABLET*/
+@media screen and (min-width: 700px) {
+  .page { width: 476px; margin: 0px auto 20% auto; }
+  .navigator { position: relative; width: 650px; margin: 0px auto 20px auto; padding: 5px;} 
+  .icon { font-size: 35px }
 }
-/* LARGE DEVICES - WIDE SCREENS*/
-@media screen and (min-width: 1280px) {
-  .page { width: 700px; margin-right: auto;  }
-
-
-}
-  
 
 
 
