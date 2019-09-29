@@ -3,10 +3,10 @@
  > Sorted by newest
  
  * Personal Portfolio Webpage 
-    :x:
+    :wrench:
 
  * Technical Documentation Page: https://codepen.io/cardosorrenan/pen/KKPQeOm 
-    :wrench:
+    :heavy_check_mark:
 
  * Product Landing Page: https://codepen.io/cardosorrenan/pen/PoYvYax
     :heavy_check_mark:
