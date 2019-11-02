@@ -15,6 +15,7 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
+
 }
 
 /* MAIN DIV FORM -------------------------*/
@@ -25,6 +26,7 @@ html, body {
   width: 80%;
   box-shadow: 0px 0px 100px rgba(255,255,255,0.15);
   background-color: black;
+  margin-bottom: 250px;
 }
 
 @media (max-width: 400px) {  
@@ -111,34 +113,4 @@ html, body {
   cursor: pointer;
 }
 
-/* MY INFO -------------------------*/
-.contact {
-  width: 200px;
-  padding: 10px 0 7px 0;
-  margin: 10% 0 2% 0;
-  text-align: center;
-  border: 3px ridge rgba(255,255,255,0.1);
-  border-radius: 4px;
-  background-color: black;
-  box-shadow: 0px 0px 20px rgba(255,255,255,0.1);
-}
 
-.contact:hover {
-  box-shadow: 0px 0px 0px rgba(255,255,255,0);
-  background-color: rgba(0,0,0,0.9);;
-}
-
-.contact a {
-  padding: 2%;
-  margin-top: 7px;
-  color: white;
-}
-
-.contact p {
-  width: auto;
-  font-family: 'Lobster', cursive;
-  margin: 7px 0 0 0;
-  font-size: 1em;
-  font-weight: 100;
-  color: rgba(255, 255, 255, 0.8);
-}
