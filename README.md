@@ -1,10 +1,28 @@
 ## Links
  > Sorted by newest
 
- #### Responsive Web Design Projects
+ #### JavaScript Algorithms and Data Structures Projects
+
+ * Palindrome Checker
+    :wrench:
+
+ * Roman Numeral Converter
+    :wrench:
+
+ * Caesars Cipher
+    :wrench:
+
+ * Telephone Number Validator
+    :wrench:
+
+ * Cash Register
+    :wrench:
+
+
+ #### Responsive Web Design Projects (Only HTML + CSS)
 
  * Personal Portfolio Webpage: https://codepen.io/cardosorrenan/pen/QWWwKNR
-     :heavy_check_mark:
+    :heavy_check_mark:
 
  * Technical Documentation Page: https://codepen.io/cardosorrenan/pen/KKPQeOm 
     :heavy_check_mark:

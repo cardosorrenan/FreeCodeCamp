@@ -208,8 +208,6 @@ form {
   cursor: pointer;
 }
 
-
-
 *::-webkit-scrollbar {
   width: 8px;
   border-radius: 10px;
@@ -228,8 +226,7 @@ form {
 
 /* MEDIUM DEVICES - TABLET*/
 @media screen and (min-width: 700px) {
-  .page { width: 476px; margin: 0px auto 20% auto; }
- 
+  .page { width: 476px; margin: 10% auto 20% auto; }
   .icon { font-size: 35px }
 }
 
