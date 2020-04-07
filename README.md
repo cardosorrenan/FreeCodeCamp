@@ -1,22 +1,30 @@
 ## Links
  > Sorted by newest
 
- #### JavaScript Algorithms and Data Structures Projects
+ #### Javascript Algorithms and Data Structures Projects
 
- * Palindrome Checker
-    :wrench:
+  * Palindrome Checker: 
+ [Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/palindrome-checker) |
+ [Solution](https://github.com/cardosorrenan/freeCodeCamp/blob/master/Javascript%20Algorithms%20and%20Data%20Structures%20Projects/PalindromeChecker.js)
+ :heavy_check_mark:
 
- * Roman Numeral Converter
-    :wrench:
+ * Roman Numeral Converter:
+ [Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/roman-numeral-converter) |
+ [Solution](https://github.com/cardosorrenan/freeCodeCamp/blob/master/Javascript%20Algorithms%20and%20Data%20Structures%20Projects/RomanNumeralConverter.js)
+ :heavy_check_mark:
 
- * Caesars Cipher
-    :wrench:
+ * Caesars Cipher:
+ [Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/caesars-cipher) |
+ [Solution](https://github.com/cardosorrenan/freeCodeCamp/blob/master/Javascript%20Algorithms%20and%20Data%20Structures%20Projects/CaesarsCipher.js) :heavy_check_mark:
 
- * Telephone Number Validator
-    :wrench:
+ * Telephone Number Validator:
+ [Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/telephone-number-validator) |
+ [Solution](https://github.com/cardosorrenan/freeCodeCamp/blob/master/Javascript%20Algorithms%20and%20Data%20Structures%20Projects/TelephoneNumberValidator.js) :heavy_check_mark:
 
- * Cash Register
-    :wrench:
+ * Cash Register:
+ [Problem](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/javascript-algorithms-and-data-structures-projects/cash-register) |
+ [Solution](https://github.com/cardosorrenan/freeCodeCamp/blob/master/Javascript%20Algorithms%20and%20Data%20Structures%20Projects/CashRegister.js) :heavy_check_mark:
+
 
 
  #### Responsive Web Design Projects (Only HTML + CSS)
